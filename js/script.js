@@ -35,4 +35,14 @@ const teamMembers = [
     {firstName: 'Barbara Ramos', role: 'Graphic Designer', source: 'barbara-ramos-graphic-designer.jpg'},
 ]
 
-console.log(teamMembers)
+// Stampo su console i dati richiesti
+
+for(let i = 0; i < teamMembers.length; i++){
+    const currentMember = teamMembers[i];
+    // Nome
+    console.log(`Name: ${currentMember.firstName}`);
+    // Ruolo
+    console.log(`Role: ${currentMember.role}`);
+    // Stringa della foto
+    console.log(`Source: ./img/${currentMember.source}`);
+}
