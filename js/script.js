@@ -23,3 +23,16 @@ Angela Lopez  |	Social Media Manager |	angela-lopez-social-media-manager.jpg
 Scott Estrada |	Developer            |	scott-estrada-developer.jpg
 Barbara Ramos |	Graphic Designer     |	barbara-ramos-graphic-designer.jpg 
 */
+
+// Creo l'array di oggetti:
+
+const teamMembers = [
+    {firstName: 'Wayne Barnett', role: 'Founder & CEO', source: 'wayne-barnett-founder-ceo.jpg'},
+    {firstName: 'Angela Caroll', role: 'Chief Editor', source: 'angela-caroll-chief-editor.jpg'},
+    {firstName: 'Walter Gordon', role: 'Office Manager', source: 'walter-gordon-office-manager.jpg'},
+    {firstName: 'Angela Lopez', role: 'Social Media Manager', source: 'angela-lopez-social-media-manager.jpg'},
+    {firstName: 'Scott Estrada', role: 'Developer', source: 'scott-estrada-developer.jpg'},
+    {firstName: 'Barbara Ramos', role: 'Graphic Designer', source: 'barbara-ramos-graphic-designer.jpg'},
+]
+
+console.log(teamMembers)
