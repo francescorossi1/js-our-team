@@ -27,12 +27,12 @@ Barbara Ramos |	Graphic Designer     |	barbara-ramos-graphic-designer.jpg
 // Creo l'array di oggetti:
 
 const teamMembers = [
-    {firstName: 'Wayne Barnett', role: 'Founder & CEO', source: 'wayne-barnett-founder-ceo.jpg'},
-    {firstName: 'Angela Caroll', role: 'Chief Editor', source: 'angela-caroll-chief-editor.jpg'},
-    {firstName: 'Walter Gordon', role: 'Office Manager', source: 'walter-gordon-office-manager.jpg'},
-    {firstName: 'Angela Lopez', role: 'Social Media Manager', source: 'angela-lopez-social-media-manager.jpg'},
-    {firstName: 'Scott Estrada', role: 'Developer', source: 'scott-estrada-developer.jpg'},
-    {firstName: 'Barbara Ramos', role: 'Graphic Designer', source: 'barbara-ramos-graphic-designer.jpg'},
+    {name: 'Wayne Barnett', role: 'Founder & CEO', source: 'wayne-barnett-founder-ceo.jpg', email: 'waynebarnett@team.com'},
+    {name: 'Angela Caroll', role: 'Chief Editor', source: 'angela-caroll-chief-editor.jpg', email: 'angelacaroll@team.com'},
+    {name: 'Walter Gordon', role: 'Office Manager', source: 'walter-gordon-office-manager.jpg', email: 'waltergordon@team.com'},
+    {name: 'Angela Lopez', role: 'Social Media Manager', source: 'angela-lopez-social-media-manager.jpg', email: 'angelalopez@team.com'},
+    {name: 'Scott Estrada', role: 'Developer', source: 'scott-estrada-developer.jpg', email: 'scottestrada@team.com'},
+    {name: 'Barbara Ramos', role: 'Graphic Designer', source: 'barbara-ramos-graphic-designer.jpg', email: 'barbararamos@team.com'},
 ]
 
 // Stampo le stesse informazioni sul DOM
@@ -45,5 +45,5 @@ const display = document.getElementById('display');
 
 for(let i = 0; i < teamMembers.length; i++){
     const currentMember = teamMembers[i];
-    display.innerHTML += `<li>Name: ${currentMember.firstName} - Role: ${currentMember.role} - Source: <img src="./img/${currentMember.source}" alt="${currentMember.firstName}"</img></li>`;
+    display.innerHTML += `<li><div class="card"><img src="./img/${currentMember.source}" alt="${currentMember.name}"</img><div class="card-text"><p>${currentMember.name}</p><p>${currentMember.role}</p><p><a href="#">${currentMember.email}<a></p></div></div></li>`;
 }
