@@ -40,18 +40,10 @@ const teamMembers = [
 // Collego l'elemento del DOM
 
 const display = document.getElementById('display');
+
 // Stampo su pagina i dati richiesti
 
 for(let i = 0; i < teamMembers.length; i++){
-    let memberDisplay = document.createElement('li');
-    display.appendChild(memberDisplay);
     const currentMember = teamMembers[i];
-    // Nome
-    memberDisplay.innerHTML += (`Name: ${currentMember.firstName} - `);
-    // Ruolo
-    memberDisplay.innerHTML += (`Role: ${currentMember.role} - `);
-    // Stringa della foto
-    memberDisplay.innerHTML += (`Source: ./img/${currentMember.source}`);
-
-
+    display.innerHTML += `<li>Name: ${currentMember.firstName} - Role: ${currentMember.role} - Source: <img src="./img/${currentMember.source}" alt="${currentMember.firstName}"</img></li>`;
 }

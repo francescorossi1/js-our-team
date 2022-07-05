@@ -4,6 +4,22 @@
     box-sizing: border-box;
 }
 
+img{
+    display: inline-block;
+    width: 150px;
+    vertical-align: middle;
+}
+
 ul{
     list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px auto;
+
+}
+
+li{
+    width: 40%;
+    padding: 20px;
+    text-align: end;
 }
