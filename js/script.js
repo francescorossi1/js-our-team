@@ -35,14 +35,23 @@ const teamMembers = [
     {firstName: 'Barbara Ramos', role: 'Graphic Designer', source: 'barbara-ramos-graphic-designer.jpg'},
 ]
 
-// Stampo su console i dati richiesti
+// Stampo le stesse informazioni sul DOM
+
+// Collego l'elemento del DOM
+
+const display = document.getElementById('display');
+// Stampo su pagina i dati richiesti
 
 for(let i = 0; i < teamMembers.length; i++){
+    let memberDisplay = document.createElement('li');
+    display.appendChild(memberDisplay);
     const currentMember = teamMembers[i];
     // Nome
-    console.log(`Name: ${currentMember.firstName}`);
+    memberDisplay.innerHTML += (`Name: ${currentMember.firstName} - `);
     // Ruolo
-    console.log(`Role: ${currentMember.role}`);
+    memberDisplay.innerHTML += (`Role: ${currentMember.role} - `);
     // Stringa della foto
-    console.log(`Source: ./img/${currentMember.source}`);
+    memberDisplay.innerHTML += (`Source: ./img/${currentMember.source}`);
+
+
 }
